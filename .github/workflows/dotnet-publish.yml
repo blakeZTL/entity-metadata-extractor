@@ -26,6 +26,8 @@ jobs:
       run: dotnet build --no-restore
     - name: Publish
       run: dotnet publish -r win10-x64 --self-contained true -p:PublishSingleFile=true -p:EnableCompressionInSingleFile=true -p:PublishTrimmed=true
+    - name: List publish directory
+      run: ls -l ./bin/Release/net7.0/win10-x64/publish/
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -42,6 +44,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./bin/Release/net7.0/win10-x64/publish/Entity Metadata Extractor.exe
-        asset_name: Entity Metadata Extractor.exe
+        asset_path: "./bin/Release/net7.0/win10-x64/publish/Entity Metadata Extractor.exe"
+        asset_name: "Entity Metadata Extractor.exe"
         asset_content_type: application/octet-stream
