@@ -9,7 +9,7 @@ The goal is to provide a quick and easy way to leverage descriptions inside Data
 
 ## Getting Started
 
-Download the latest release from [the releases page.](https://github.com/blakeZTL/entity-metadata-extractor/releases)
+Download the *entity.metadata.extractor.exe* file from the [latest release page.](https://github.com/blakeZTL/entity-metadata-extractor/releases)
 Unzip file and use the executable (.exe). The other file can be discarded. No installation needed.
 
 Output file is a JSON file with the following schema:
