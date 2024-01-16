@@ -29,9 +29,7 @@ jobs:
     - name: Check current directory
       run: pwd
     - name: List publish directory
-      run: ls -l /home/runner/work/entity-metadata-extractor/entity-metadata-extractor/Entity Metadata Extractor/bin/Release/net7.0/win10-x64/publish/
-    - name: List publish directory
-      run: ls -l /home/runner/work/entity-metadata-extractor/entity-metadata-extractor/Entity Metadata Extractor/bin/Release/net7.0/win10-x64/publish/
+      run: ls -l "/home/runner/work/entity-metadata-extractor/entity-metadata-extractor/Entity Metadata Extractor/bin/Release/net7.0/win10-x64/publish/"
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
