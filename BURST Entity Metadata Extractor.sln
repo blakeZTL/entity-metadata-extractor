@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity Metadata Extractor", "Entity Metadata Extractor\Entity Metadata Extractor.csproj", "{8FA06C73-1D27-4763-9D3A-B4C138B6873C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FA06C73-1D27-4763-9D3A-B4C138B6873C}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA06C73-1D27-4763-9D3A-B4C138B6873C}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{8FA06C73-1D27-4763-9D3A-B4C138B6873C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA06C73-1D27-4763-9D3A-B4C138B6873C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B8367F9-4195-4E35-9930-B9A35DB5565A}
+	EndGlobalSection
+EndGlobal

@@ -9,7 +9,7 @@ The goal is to provide a quick and easy way to leverage descriptions inside Data
 
 ## Getting Started
 
-Head over to my [App Center](https://appcenter.ms/users/james.b.bradford-faa.gov/apps/BURST-Entity-Metadata-Extractor/distribute/releases) and download the latest release.
+Download the *entity.metadata.extractor.exe* file from the [latest release page.](https://github.com/blakeZTL/entity-metadata-extractor/releases)
 Unzip file and use the executable (.exe). The other file can be discarded. No installation needed.
 
 Output file is a JSON file with the following schema:
