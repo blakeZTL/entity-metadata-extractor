@@ -46,10 +46,22 @@ partial class Program
 
         string connectionString =
             $"AuthType=OAuth;Url={url};RedirectUri=http://localhost;LoginPrompt=Auto";
+        ServiceClient? service = null;
+        try
+        {
+            service = new ServiceClient(connectionString);
+        }
+        catch
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(
+                "\n\nConnection failed. Please check the URL and try again.\n\nPress any key to exit..."
+            );
+            Console.ReadKey();
+            Environment.Exit(0);
+        }
 
-        var service = new ServiceClient(connectionString);
-
-        if (service.IsReady)
+        if (service != null && service.IsReady)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\n\nConnection successful!");
